@@ -20,7 +20,7 @@ The Virtual Machine was provisioned using a hypervisor, where **Ubuntu Server** 
 
 ## 3. Configure VM Networking for Browser Access
 
-![VM Networking](3. Configure VM networking for browser access.png)
+![VM Networking](vm-networking-browser-access.png)
 
 **Explanation:**  
 The VM networking was configured to allow the **host laptop to access the server through a web browser**. The successful display of the **Enterprise Cloud Project WordPress website** confirms that the network connection between the host machine and the VM is working properly and that the web server is accessible from the host.
