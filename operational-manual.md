@@ -1,65 +1,70 @@
-# Operational Manual
+# Requirement 5: Technical Documentation
 
-## 1. System Overview
+## Your GitHub repository must serve as the handover manual for the client's IT team.
 
-This section provides an overview of the deployed cloud infrastructure and its basic operation.
+### 1. Create a Comprehensive Operational Manual
 
----
+![Operational Manual](operational-manual.png)
 
-## 2. Screenshot 1
+### Explanation
 
-![Screenshot 1](operational-manual-screenshots/screenshot-1.png)
+A comprehensive **Operational Manual** was created to serve as a handover guide for the client's IT team. The manual provides the necessary information for deploying, securing, operating, troubleshooting, and maintaining the Enterprise Cloud infrastructure.
 
-**Explanation:**  
-[Write your explanation for Screenshot 1 here.]
+The manual covers the configuration of the **Ubuntu Server, Docker, Docker Compose, WordPress, MySQL, persistent volumes, UFW firewall, database backups, and Cron Jobs**.
 
----
+The complete operational instructions are available in:
 
-## 3. Screenshot 2
+```text
+operational-manual.md
+```
 
-![Screenshot 2](operational-manual-screenshots/screenshot-2.png)
-
-**Explanation:**  
-[Write your explanation for Screenshot 2 here.]
+The manual provides step-by-step procedures that can help the IT team manage the system after the project has been handed over.
 
 ---
 
-## 4. Screenshot 3
+## 2. Include All Raw Code in the Repository
 
-![Screenshot 3](operational-manual-screenshots/screenshot-3.png)
+![Project Source Code](source-code-files.png)
 
-**Explanation:**  
-[Write your explanation for Screenshot 3 here.]
+### Explanation
 
----
+The raw source and configuration files used in the Enterprise Cloud Project were included directly in the GitHub repository. This allows the client's IT team to review, modify, and reuse the project configuration when necessary.
 
-## 5. Screenshot 4
+The repository includes the following important files:
 
-![Screenshot 4](operational-manual-screenshots/screenshot-4.png)
+```text
+docker-compose.yml
+automation-script.sh
+```
 
-**Explanation:**  
-[Write your explanation for Screenshot 4 here.]
+The `docker-compose.yml` file contains the configuration for the Docker services, including the WordPress application, MySQL database, networks, and persistent volumes.
 
----
-
-## 6. Screenshot 5
-
-![Screenshot 5](operational-manual-screenshots/screenshot-5.png)
-
-**Explanation:**  
-[Write your explanation for Screenshot 5 here.]
+The `automation-script.sh` file contains the Bash commands used to automate the database backup and operational tasks.
 
 ---
 
-## 7. Screenshot 6
+## 3. Final Reflection
 
-![Screenshot 6](operational-manual-screenshots/screenshot-6.png)
+![Final Reflection](final-reflection.png)
 
-**Explanation:**  
-[Write your explanation for Screenshot 6 here.]
+### Explanation
 
----
+A **Final Reflection** was created to summarize the learning journey from **Mission 1 to Mission 10**. It discusses the development of the Enterprise Cloud infrastructure and the lessons learned from virtualization, containerization, networking, security, persistent storage, automation, disaster recovery, and technical documentation.
 
-## 8. Troubleshooting
+The complete reflection is available in:
 
-[Add your troubleshooting information here.]
+```text
+final-reflection.md
+```
+
+### Final Reflection
+
+Throughout Missions 1 to 10, I learned how to build and manage an enterprise cloud environment step by step. I started with the basic infrastructure and Virtual Machine setup, then continued with Ubuntu Server configuration and networking.
+
+As the project progressed, I learned how to use Docker and Docker Compose to deploy services such as WordPress and MySQL. I also learned the importance of persistent volumes because they allow database data to remain available even after restarting the Virtual Machine.
+
+Security was another important part of the project. I configured the UFW firewall and learned how limiting access to only the necessary ports can help protect the server.
+
+I also learned how automation can make server management easier. By creating a Bash backup script and scheduling it with Cron, regular database backups can be performed automatically without requiring manual execution.
+
+Overall, Missions 1 to 10 helped me understand how different cloud technologies work together. I learned that a reliable cloud environment is not only about deploying applications but also about security, data persistence, automation, maintenance, and proper documentation. This project improved my practical skills and gave me a better understanding of how an IT team can manage and maintain a cloud infrastructure in a real-world environment.
