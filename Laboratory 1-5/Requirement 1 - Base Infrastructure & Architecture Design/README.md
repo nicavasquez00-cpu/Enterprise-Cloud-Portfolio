@@ -11,7 +11,7 @@ The network topology and architecture diagram shows how the different components
 
 ## 2. Provision a Virtual Machine and Install Ubuntu Server
 
-![Provision Virtual Machine](2. Provision-a-Virtual-Machine-and-install-Ubuntu-Server.png)
+![Provision Virtual Machine](vm-ubuntu-server.png)
 
 **Explanation:**  
 The Virtual Machine was provisioned using a hypervisor, where **Ubuntu Server** was installed as the operating system. The VM provides an isolated environment that uses allocated **CPU, RAM, storage, and network resources** from the host machine. This Ubuntu Server environment serves as the main platform for configuring and deploying the cloud infrastructure and Docker services.
