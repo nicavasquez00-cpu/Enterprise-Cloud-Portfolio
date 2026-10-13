@@ -22,7 +22,7 @@ The raw configuration and source code used in the Enterprise Cloud Project were 
 The `docker-compose.yml` file contains the configuration for the Docker services, including the WordPress application, MySQL database, networks, and persistent volumes.
 
 **Docker Compose File:**  
-[Open docker-compose.yml](../../docker-compose.yml)
+[Open docker-compose.yml](docker-compose.yml.png)
 
 ### Automation Script
 
