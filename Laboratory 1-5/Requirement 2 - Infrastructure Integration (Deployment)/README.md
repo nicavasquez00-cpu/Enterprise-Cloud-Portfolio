@@ -64,7 +64,7 @@ The `sudo docker ps` command displays the currently running Docker containers, a
 
 ## 4. The database must utilize Persistent Volumes so that data survives a VM reboot
 
-![Persistent Docker Volumes](screenshot-4.png)
+![Persistent Docker Volumes](persistent-volume-test.png)
 
 ### Explanation
 
