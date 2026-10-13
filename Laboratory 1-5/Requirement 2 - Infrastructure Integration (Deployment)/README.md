@@ -2,7 +2,7 @@
 
 ## 1. Install Docker and Docker Compose on your new Ubuntu Server
 
-![Install Docker and Docker Compose](screenshot-1.png)
+![Install Docker and Docker Compose](docker-installation.png)
 
 ### Explanation
 
