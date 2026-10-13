@@ -46,7 +46,7 @@ The `compose.yaml` file is then used to define the required Docker containers, n
 
 ## 3. The stack must include at least two linked containers
 
-![The stack must include at least two linked containers](screenshot-3.png)
+![The stack must include at least two linked containers](wordpress-mysql-containers.png)
 
 ### Explanation
 
