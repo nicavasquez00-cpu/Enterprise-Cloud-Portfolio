@@ -77,3 +77,69 @@ sudo docker volume ls
 ```
 
 The `sudo docker volume ls` command displays the Docker volumes available on the system. This confirms that a persistent volume is being used to store the database data separately from the MySQL container.
+
+### Persistence Test
+
+To verify that the persistent volume works correctly, a test post was created in WordPress and the VM was rebooted. The following steps were performed:
+
+#### Step 1 — Create a Test Post in WordPress
+
+The WordPress website was opened in the Windows browser:
+
+**http://127.0.0.1:8080**
+
+The WordPress admin panel was accessed through:
+
+**http://127.0.0.1:8080/wp-admin**
+
+A new WordPress post was created with the title:
+
+**Persistence Test 101**
+
+#### Step 2 — Check That the Containers Are Running
+
+In the Ubuntu terminal, the following command was used:
+
+```bash
+sudo docker ps
+```
+
+The WordPress and MySQL containers should be listed with a status of **Up**, confirming that both containers are running.
+
+#### Step 3 — Restart the Ubuntu VM
+
+The Ubuntu VM was restarted using:
+
+```bash
+sudo reboot
+```
+
+The terminal disconnected while the VM was restarting. After the VM finished booting, the user logged in again.
+
+The Docker volumes were not deleted. Only the VM was rebooted to test whether the stored data would remain available.
+
+#### Step 4 — Check the Containers After the Reboot
+
+After logging back into Ubuntu, the following command was used:
+
+```bash
+sudo docker ps
+```
+
+The container status was checked to determine whether the WordPress and MySQL containers were running again after the VM reboot.
+
+#### Step 5 — Check if the Test Post Still Exists
+
+The WordPress website was opened again:
+
+**http://127.0.0.1:8080**
+
+The **Persistence Test 101** post was checked to verify that it was still available. The WordPress admin panel can also be accessed through:
+
+**http://127.0.0.1:8080/wp-admin**
+
+and the post can be checked from the **Posts** list.
+
+If the **Persistence Test 101** post is still available after the VM reboot, the data persistence test is successful. This confirms that the MySQL data stored in the persistent volume was preserved after restarting the Ubuntu VM.
+
+If the website is not accessible, the container status should be checked first. If the website becomes accessible but the test post is missing, the persistence test should not be considered successful.
