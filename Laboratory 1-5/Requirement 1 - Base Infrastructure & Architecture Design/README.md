@@ -2,7 +2,7 @@
 
 ## 1. Network Topology and Architecture Diagram
 
-![Architecture Diagram](architecture-diagram.png)
+![Architecture Diagram](architecture-diagram.png.png)
 
 **Explanation:**  
 The network topology and architecture diagram shows how the different components of the cloud infrastructure are connected. The **host machine** provides the physical hardware and operating system where the **hypervisor**, such as VirtualBox, runs the **Linux Virtual Machine (VM)**. Inside the Linux VM, a **firewall** controls and filters network traffic to improve security. The VM also runs **Docker**, which manages separate containers for the **Web Application, API, and Database**. The Docker containers communicate through a **Docker bridge network**, while the firewall helps control traffic entering and leaving the system. Overall, the diagram shows the flow of network traffic and how virtualization, security, and containerization work together in the cloud environment.
