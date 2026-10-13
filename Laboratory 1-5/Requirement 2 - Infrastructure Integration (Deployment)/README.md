@@ -24,7 +24,7 @@ These commands confirm that the Docker engine and Docker Compose are properly in
 
 ## 2. Write a complete docker-compose.yml file
 
-![Write a complete docker-compose.yml file](screenshot-2.png)
+![Write a complete docker-compose.yml file](docker-compose-file.png)
 
 ### Explanation
 
